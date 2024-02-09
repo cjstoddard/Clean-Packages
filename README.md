@@ -2,7 +2,7 @@
 
 This is a set of shell scripts that lets you return a Debian or Ubuntu system back to a previous state. The use case being, you want to experiment with a program that will require you to install a bunch of packages and when you are done, you want to be able to remove them without much fuss.
 
-make-baseline.sh: This is the first script to be run, it writes the file pkg-baseline.txt which has a list of all your currently installed packages. Put this someplace safe.
+make-baseline.sh: This is the first script to be run, it writes the file pkg-baseline.txt which has a list of all your currently installed packages. Run this script before you start your experiment and put this someplace safe. I also run this script after I have done a fresh install of Debian and gotten the system where I want it so I can return it to a clean state whenever I want.
 
 chk-packages.sh: This is the script you run after you are finished doing whatever it was you where doing. It does the same thing make-baseline.sh, except it writes the file package-chk.txt, which contains the current list of packages.
 
